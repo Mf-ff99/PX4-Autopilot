@@ -104,7 +104,7 @@ void InternalCombustionEngineControl::Run()
 	actuator_motors_s actuator_motors;
 	_actuator_motors.copy(&actuator_motors);
 
-	const float throttle_in = actuator_motors.control[0];
+	const float throttle_in = actuator_motors.control[_param_ice_thr_in_cfg.get() - 1];
 
 	const hrt_abstime now = hrt_absolute_time();
 

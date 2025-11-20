@@ -118,3 +118,14 @@ parameters:
         decimal: 1
         increment: 0.1
         default: 0
+
+      ICE_THR_IN_CFG:
+        description:
+          short: Actuator used for throttle
+          long: |
+              For Fixed-Wing only aircraft this is like Motor1. For VTOL aircraft this is likely Motor5, depending on the user's configuration of the actuators.
+        type: int32
+        min: 1
+        max: 8
+        increment: 1
+        default: 1
